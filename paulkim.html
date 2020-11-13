@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Player_Paul</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/headerStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/paul.css"/>
+</head>
+<body>
+    <div id = "wrap" class="paul_all">
+        <header>
+            <h1><a href="./main.html"><img src="./img/logo.png" class="img-logo" alt = "logo" width="158"></a></h1>
+            <nav>
+                <ul>
+                    <a href="./paulkim.html" class="nav-paul" target = "_self">Paul Kim<img src="./img/pause.png" class="nav-pause" alt = "nav-pause" height = "20" /></a>
+                    <a href="./song.html" class="nav-song" target = "_self">Paul Song<img src="./img/pause.png" class="nav-pause" alt = "nav-pause" height = "20" /></a>
+                    <a href="./live.html" class="nav-live" target = "_self">Paul Live<img src="./img/pause.png" class="nav-pause" alt = "nav-pause" height = "20" /></a>
+                </ul>
+            </nav>
+            <div class = "nav-music-player-container">
+                <!-- music status player -->
+                <img src="./img/music/music01.png" class="nav-music-player" alt ="music-status" height="48"/>
+                <div class="nav-music-inform">
+                    <div class = "nav-music-status">
+                        <p class="nav-state">Music Playing</p>
+                        <div class="nav-music-graph-all">
+                            <div class="nav-graph" >Graph</div>
+                            <div class="nav-graph" >Graph</div>
+                            <div class="nav-graph" >Graph</div>
+                            <div class="nav-graph" >Graph</div>
+                        </div>
+                    </div>
+                    <h3>커피 한 잔 할래요</h3>
+                </div>
+            </div>
+            <div class="official-container">
+                <h2>Official</h2>
+                <div id = "official-btn">
+                    <a href="https://ko-kr.facebook.com/hoonhoonpaul/" target = "_blank"><img src="./img/facebook.png" class = "img-facebook "alt = "facebook" width="40" /></a>
+                    <a href="https://www.youtube.com/channel/UCFjKZImEGGPqOz7P9UZ0IlQ" target = "_blank"><img src="./img/youtube.png" class = "img-youtube "alt = "youtube" width="40" /></a>
+                    <a href="https://www.instagram.com/pkalbum/?hl=ko" target = "_blank"><img src="./img/instagram.png" class = "img-instagram "alt = "instagram" width="40" /></a>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <div id = "paulPage">
+                <h2>Paul Kim</h2>
+                <p>Who is Paul Kim</p>
+            </div>
+            <div id = "paul-container">
+                <div id = "Pcard01" class="Pcard-parrent">
+                    <div class="Pcard">
+                        <img class="card_back" src="./img/music_back/cardback01.jpg" width="1200"alt="카드01 백그라운드"/>
+                        <div class="cardTxt">
+                            <div>
+                                <h3>오늘 당신에게<br/><span>폴킴</span>을 추천드려요.</h3>
+                                <div class="paul-inform">
+                                    <dl class="inform">
+                                        <dt>Name</dt>
+                                        <dd>김태형</dd>
+                                    </dl>
+                                    <dl class="inform">
+                                        <dt>Birth Year</dt>
+                                        <dd>1988년생/32살</dd>
+                                    </dl>
+                                    <dl class="inform">
+                                        <dt>Agency</dt>
+                                        <dd>뉴런뮤직</dd>
+                                    </dl>
+                                </div>
+                                <p class="txt">
+                                    폴킴은 뉴런 뮤직에 소속된 대한민국의 싱어송라이터입니다. 2014년 싱글 '커피 한 잔 할래요'로
+                                    가요계에 대뷔했습니다.<br/>
+                                    2018년 10월에 발표한 '너를 만나'는 가을에 어울리는 깊은 가사와 짙은 감성의 목소리로 차트 1위를
+                                    차지하였고, 다음 '초록빛'까지 차트 정상을 밟으며 연이은 히트를 기록했습니다. 2019년 드라마
+                                    "호텔델루나"의 OST인 '안녕'을 공개했습니다. 따뜻한 슬픔을 노래해 시청자들의 마음을 울려 월간
+                                    차트 1위를 달성하는 영광을 안았습니다.
+                                </p>
+                                <a class="card-btn card-offi-btn" target="_blank" href="https://www.youtube.com/channel/UCFjKZImEGGPqOz7P9UZ0IlQ">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="paulimg01" src="./img/paul-kim_01.png" width="588" alt="폴킴이미지01"/>
+                </div>
+                <div id = "Pcard02" class="Pcard">
+                    <img class="card_back" src="./img/music_back/cardback02.jpg" alt="카드02 백그라운드"/>
+                    <div class="cardTxt">
+                        <div>
+                            <h3>당신에게 어울리는<br/><span>폴킴 음악</span>입니다.</h3>
+                            <div class="reco-container">
+                                <div class="reco-music-container reco-now">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music01.png" width="148" alt="음악01"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p>Digital Single</p>
+                                            <h3>커피 한 잔 할래요</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio01.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar01">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">04:09</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reco-music-container reco-notnow">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music02.png" width="148" alt="음악02"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p>The 2nd Mini Album</p>
+                                            <h3>Her</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio02.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar02">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">04:53</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reco-music-container reco-notnow">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music03.png" width="148" alt="음악03"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p>Digital Single</p>
+                                            <h3>너를 만나</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio03.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar03">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">04:51</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reco-music-container reco-notnow">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music04.png" width="148" alt="음악04"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p>Digital Single</p>
+                                            <h3>초록빛</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio04.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar04">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">03:46</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reco-music-container reco-notnow">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music05.png" width="148" alt="음악05"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p class="kor">정규 2집 pt2 '마음, 둘'</p>
+                                            <h3>우리 만남이</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio05.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar05">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">04:18</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reco-music-container reco-notnow">
+                                    <div class="music_left">
+                                        <h4>추천 음악</h4>
+                                        <img class="rndmusic_img" src="./img/music/music06.png" width="148" alt="음악06"/>
+                                    </div>
+                                    <div class="music_right">
+                                        <div class = "music-status">
+                                            <p class="state">Play the Music</p>
+                                            <div class="music-graph-all">
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                                <div class="graph" >Graph</div>
+                                            </div>
+                                        </div>
+                                        <div class = "music-title">
+                                            <p class="kor">정규 2집 pt2 '마음, 둘'</p>
+                                            <h3>나의 봄의 이유</h3>
+                                            <audio class="audio" loop>
+                                                <source src="./audio/audio06.mp3" type="audio/mp3"/>
+                                            </audio>
+                                        </div>
+                                        <div class = "music_bar">
+                                            <div class="bar_input"><input type="range" min="0" max="249" value="100" class="slider"/><div class="bar_state bar06">바스테이트</div></div>
+                                            <div class="music_time_container">
+                                                <p class="time01">00:00</p>
+                                                <p class="time02">03:20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="card-btn card-music-btn" target="_self" href="./song.html">+</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="paulimg02" src="./img/paul-kim_02.png" width="600" alt="폴킴 02"/>
+                </div>
+                <div id="Pcard03"class="Pcard">
+                    <img class="card_back" src="./img/music_back/cardback03.jpg" alt="카드03 백그라운드"/>
+                    <h3>Paul Gallery</h3>
+                    <p>노래의 장르에는 발라드, 랩, 힙합, 댄스 그리고 <span>폴킴</span>이 있다.</p>
+                    <div class="gallery-container">
+                        <div>
+                            <div class="gallery-img"><img src="./img/gallery/img01.jpg" width="450" alt=""/></div>
+                            <div class="gallery-img"><img src="./img/gallery/img02.jpg" width="450" alt=""/></div>
+                            <div class="gallery-img"><img src="./img/gallery/img03.jpg" width="450" alt=""/></div>
+                            <div class="gallery-img"><img src="./img/gallery/img04.jpg" width="450" alt=""/></div>
+                            <div class="gallery-img"><img src="./img/gallery/img05.jpg" width="450" alt=""/></div>
+                        </div>            
+                    </div>
+                    <div class="gallery-status-container">
+                        <div>
+                            <div class="g-status gaf">gs</div>
+                            <div class="g-status gaf">gs</div>
+                            <div class="g-status gnow">gs</div>
+                            <div class="g-status gaf">gs</div>
+                            <div class="g-status gaf">gs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript" src="./js/Paulscript.js"></script>
+    <script type="text/javascript" src="./js/HeaderScript.js"></script>
+</body>
+</html>

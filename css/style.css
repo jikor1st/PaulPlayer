@@ -1,0 +1,175 @@
+*{margin:0;padding:0;font-family: 'Montserrat Alternates', sans-serif;}
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+body{background-color:#d8e1ea;overflow:hidden;}
+
+
+body > div > h1 > a > img{ width:158px;margin-top:70px;margin-left:90px;}
+
+div#wrap > h1 {
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+@keyframes UnloadPaulLogo{
+    0%{
+        opacity:1;
+        transform:translateX(0);
+    }
+    100%{
+        opacity:0;
+        transform:translateX(-50px);
+    }
+}
+
+#paul-player{
+    opacity:1;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out;
+}
+@keyframes UnloadPaulImage{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+#paul-player > .imgA > img.img-paulplayer {
+    width:582px;position:absolute;left:50%;top:50%;margin-left:-291px;margin-top:-295px; z-index:0;
+    filter : drop-shadow(30px 30px 30px #148ea660) grayscale(100%) saturate(0) brightness(125%) contrast(50%);
+    
+    cursor:pointer;
+
+    opacity:0.4;
+    transition:All 1s ease;
+    animation-name :loadPaulImage;
+    animation-duration: 0.7s;
+    animation-timing-function:ease-in-out;
+
+}
+@keyframes loadPaulImage{
+    0%{
+        opacity:0;
+        transform: translateY(50px) scale(0.9);
+    }
+    100%{
+        opacity:0.4;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#paul-player > h1 {font-size:75px;font-weight:600;color:#323436;letter-spacing:-5.5px;z-index:1;}
+#paul-player > h1.h1-paul {
+    position:absolute;/*left:22.5%;top:300px;*/
+    left:7%; top:300px;
+    opacity:0;
+    transition:All 0.8s ease;
+}
+#paul-player > h1.h1-player {
+    position:absolute;/*right:32%;bottom:250px;*/
+    right:17%; bottom:250px;
+    opacity:0;
+    transition:All 1s ease;
+}
+
+#paul-player > img.img-pause {
+    width:128px; position:absolute;margin-top:-37px;/*opacity:0.3;top:300px; left:calc(22.5% - 55px);*/
+    left :15.5%;
+    top: 250px;
+    opacity:0;
+    transition:All 1.5s ease;
+    /* animation-name: micro-moving; */
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes micro-moving{
+    0%{
+        transform:translateX(0) translateY(0) scale(1);
+        opacity:0.3;
+    }
+    25%{
+        transform:translateX(17px) translateY(0) scale(0.95);
+        opacity:0.05;
+    }
+    50%{
+        transform:translateX(17px) translateY(17px) scale(1);
+        opacity:0.3;
+    }
+    75%{
+        transform:translateX(0) translateY(17px) scale(0.95);
+        opacity:0.05;
+    }
+    100%{
+        transform:translateX(0) translateY(0) scale(1);
+        opacity:0.3;
+    }
+}
+@keyframes unLoadMicro{
+    0%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:0;
+    }
+}
+#paul-player > img.img-stop {
+    width:151px; position:absolute;margin-bottom:-37px;/* bottom:250px; opacity:0.3; right:calc(32% - 200px);*/
+    bottom:200px;
+    right :17%;
+    opacity:0;
+    transition:All 1.5s ease;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#paul-player > div.music-graph-all {
+    display:flex; position:absolute;height:42px;overflow:hidden;/*right:32%;bottom:330px;*/
+    right:27%; bottom:330px;
+    opacity:0;
+    transition:all 1s;
+}
+#paul-player > div.music-graph-all > div.graph {
+    font-size:0;border:none;
+    /* border-left:7px solid #29a49d; */
+    width: 7px;background:linear-gradient(to bottom, #43bdb7 0%,#094974 70%);
+    height:80px;margin-right:6px;opacity:0.6;
+    animation-name: music-graph;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-out;
+}
+#paul-player > div.music-graph-all > div.graph:nth-child(1){ animation-duration:0.6s; }
+#paul-player > div.music-graph-all > div.graph:nth-child(2){ animation-duration:0.9s; }
+#paul-player > div.music-graph-all > div.graph:nth-child(3){ animation-duration:0.4s; }
+#paul-player > div.music-graph-all > div.graph:nth-child(4){ animation-duration:0.7s; }
+#paul-player > div.music-graph-all > div.graph:nth-child(5){ animation-duration:1s; }
+
+@keyframes music-graph{
+    0%{
+        margin-top:60%;
+    }
+    50%{
+        margin-top:10%;
+    }
+    100%{
+        margin-top:60%;
+    }
+}
+
+#paul-player > p{
+    font-size:18px;color:#323436;opacity:0.4;position:absolute;top:280px;right:35%;
+    transition:All 0.5s ease;
+    /* animation-name :loadPaulImage; */
+
+    animation-duration: 0.71s;
+    animation-fill-mode: forwards;
+    animation-timing-function:ease-in-out;
+    
+}

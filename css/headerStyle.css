@@ -1,0 +1,133 @@
+*{margin:0;padding:0; font-family: 'Montserrat Alternates', sans-serif;letter-spacing:normal;}
+html,body{height:100%;background-color:#d8e1ea;}
+
+a { color:white;}
+
+#wrap{display:flex;height:100%;}
+
+header {
+    z-index:2;background-color:#d8e1ea;width:337px;
+    filter: drop-shadow(34px 0px 34px rgba(20, 142, 166, 0.1));position:relative;
+    animation-name:onLoadHeader;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    opacity:0;
+}
+@keyframes onLoadHeader{
+    0%{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+@keyframes unLoadHeader{
+    0%{
+        opacity:1;
+        transform:translateX(0);
+    }
+    100%{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+}
+
+header > h1 {width:158px;margin: 70px auto 0 auto;}
+header > h1 > a {line-height:0;vertical-align: top;}
+
+header > nav {margin-top:132px;}
+header > nav > ul {width:337px;height:100%;}
+header > nav > ul > a {
+    /* background-color:#2da89c; */transition : all 0.6s ease-in;
+    height:60px;list-style:none;position:relative;
+    filter: drop-shadow(10px 10px 20px rgba(20, 142, 166, 0.3));
+    cursor: pointer;
+    margin-top:25px;
+    display:block;
+    opacity:0;
+    animation-name: onLoadNav;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+header > nav > ul > a:nth-child(1){animation-delay:0.1s;}
+header > nav > ul > a:nth-child(2){animation-delay:0.25s;}
+header > nav > ul > a:nth-child(3){animation-delay:0.4s;}
+@keyframes onLoadNav{
+    0%{
+        opacity:0;
+        transform:translateX(-35px);
+    }
+    100%{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+header > nav > ul > a {
+    /*color:white;*/font-size:16px;font-weight:500;color:#323436;transition: all 0.4s;
+    vertical-align:middle;line-height:60px;text-decoration:none;padding-left:89.5px;
+}
+header > nav > ul > a > img {
+    height:20px;
+    position:absolute;right:52px;top:calc(50% - 10px);opacity:0.75;vertical-align:bottom;
+}
+
+header > div.official-container {width:184px;position:absolute;bottom:60px;left:calc(50% - 92px);}
+header > div.official-container > h2 {
+    color:#55595d;font-size:15px;font-weight:600;opacity:0.25;margin-bottom:30px;margin-left:17px;
+    animation-name: onLoadOfficial-h2;
+    animation-duration: 0.6s;
+    animation-delay:0.1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes onLoadOfficial-h2{
+    0%{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    100%{
+        opacity:0.25;
+        transform:translateY(0);
+    }
+}
+header > div.official-container > div#official-btn {display:flex;justify-content: space-between;}
+header > div.official-container > div#official-btn > a > img {
+    width:40px;filter : drop-shadow(0px 0px 10px rgba(20, 142, 166, 0.15)) blur(0);;
+    transition:all 0.7s ease;
+    transform:scale(1);
+    opacity:0;
+    animation-name: onLoadOfficial-btn;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+@keyframes onLoadOfficial-btn{
+    0%{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+div#official-btn > a > img.img-facebook {animation-delay:0.3s;}
+div#official-btn > a > img.img-youtube {animation-delay:0.45s;}
+div#official-btn > a > img.img-instagram {animation-delay:0.6s;}
+
+header > div.official-container > div#official-btn > a > img:hover {
+    filter: drop-shadow(0px 0px 10px rgba(20, 142, 166, 0.15)) blur(1px);
+    transform:scale(1.1);
+    opacity:0.8;
+}
+
